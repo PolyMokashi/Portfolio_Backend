@@ -1,4 +1,4 @@
-# Pradeep Mokashi Portfolio API
+# Portfolio_Backend
 
 Standalone Python API for the portfolio frontend. It serves the portfolio
 sections from SQLite and local media from `public/` and `src/Assets/`. External
