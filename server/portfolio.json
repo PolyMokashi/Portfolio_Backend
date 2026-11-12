@@ -51,7 +51,7 @@
       ],
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
-        { "component": "https://img.icons8.com/fluency/48/tensorflow.png", "name": "TensorFlow" },
+        { "component": "https://img.icons8.com/color/48/tensorflow.png", "name": "TensorFlow" },
         { "component": "https://img.icons8.com/material-rounded/24/keras.png", "name": "Keras" },
         { "component": "https://pypi-camo.freetls.fastly.net/b86b2758380b6bc7cbdf4ff97fda9826a3b74aa2/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f6d61696e2f646f632f6c6f676f732f7363696b69742d6c6561726e2d6c6f676f2e706e67", "name": "Scikit-learn" },
         { "component": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-dNH8WI8Oy3etClaRvRCgw.png", "name": "NLTK" },
