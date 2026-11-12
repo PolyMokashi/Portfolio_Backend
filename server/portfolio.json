@@ -253,6 +253,33 @@
       "Place": "Work From Home"
     }
   ],
+  "footerLinks": [
+    {
+      "label": "Twitter",
+      "url": "https://x.com/Poly_Mokashi12",
+      "icon": "https://img.icons8.com/color/48/twitterx--v1.png"
+    },
+    {
+      "label": "Facebook",
+      "url": "https://m.facebook.com/PradeepMokashi0/",
+      "icon": "https://img.icons8.com/color/48/facebook-new.png"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/poly_mokashi",
+      "icon": "https://img.icons8.com/color/48/instagram-new--v1.png"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/PolyMokashi",
+      "icon": "https://img.icons8.com/ios-filled/50/github.png"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/pradeep-mokashi",
+      "icon": "https://img.icons8.com/color/48/linkedin.png"
+    }
+  ],
   "skills": [
     { "name": "Python", "icon": "https://img.icons8.com/color/48/python--v1.png" },
     { "name": "ML", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },

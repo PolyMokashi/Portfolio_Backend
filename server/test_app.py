@@ -16,11 +16,20 @@ class PortfolioDatabaseTests(unittest.TestCase):
 
             self.assertEqual(
                 set(portfolio),
-                {"profile", "projects", "certificates", "education", "experience", "skills"},
+                {
+                    "profile",
+                    "projects",
+                    "certificates",
+                    "education",
+                    "experience",
+                    "footerLinks",
+                    "skills",
+                },
             )
             self.assertEqual(len(portfolio["projects"]), 6)
             self.assertEqual(len(portfolio["certificates"]), 7)
             self.assertEqual(len(portfolio["skills"]), 18)
+            self.assertEqual(len(portfolio["footerLinks"]), 5)
             self.assertIn(".m3u8", portfolio["projects"][1]["src"])
             self.assertTrue(portfolio["profile"]["image"].startswith("/media/"))
 
