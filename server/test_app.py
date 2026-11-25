@@ -36,12 +36,35 @@ class PortfolioDatabaseTests(unittest.TestCase):
                     "skills",
                 },
             )
-            self.assertEqual(len(portfolio["projects"]), 6)
+            self.assertEqual(len(portfolio["projects"]), 11)
             self.assertEqual(len(portfolio["certificates"]), 7)
-            self.assertEqual(len(portfolio["skills"]), 18)
+            self.assertEqual(len(portfolio["skills"]), 40)
             self.assertEqual(len(portfolio["footerLinks"]), 5)
-            self.assertIn(".m3u8", portfolio["projects"][1]["src"])
+            self.assertTrue(
+                any(
+                    ".m3u8" in project.get("src", "")
+                    for project in portfolio["projects"]
+                )
+            )
             self.assertTrue(portfolio["profile"]["image"].startswith("/media/"))
+            self.assertTrue(portfolio["profile"]["summary"])
+            self.assertEqual(
+                portfolio["profile"]["languages"],
+                [
+                    {"name": "English", "level": "C1"},
+                    {"name": "German", "level": "A2"},
+                ],
+            )
+            project_titles = {project["Title"] for project in portfolio["projects"]}
+            self.assertTrue(
+                {
+                    "Gyanova v4: Autonomous Multi-Agent System",
+                    "Leaf Disease Detection",
+                    "Wine Quality Clustering",
+                    "EduVid AI",
+                    "PolyVault",
+                }.issubset(project_titles)
+            )
 
     def test_existing_database_content_is_not_overwritten(self):
         with tempfile.TemporaryDirectory() as temporary_directory:

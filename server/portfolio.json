@@ -1,7 +1,12 @@
 {
   "profile": {
     "name": "Pradeep Mokashi",
-    "headline": "AI-ML Developer | Full Stack Developer",
+    "headline": "AI Engineer | LLM Developer | Full Stack Developer",
+    "summary": "M.Sc. AI student at BTU Cottbus with experience in machine learning, NLP, neural-network development, and AI-driven full-stack systems. Builds and trains models and local-first inference pipelines, with a focus on scalable, offline-capable solutions.",
+    "languages": [
+      { "name": "English", "level": "C1" },
+      { "name": "German", "level": "A2" }
+    ],
     "image": "/media/Images/Poly.jpg",
     "email": "pradeepmokashi12@gmail.com",
     "resumeUrl": "https://drive.google.com/file/d/1NYQW6S-1hTBx2vogMarBC_4TfjhMpdye/view?usp=sharing",
@@ -28,11 +33,11 @@
       }
     ],
     "roles": [
-      "an Engineer",
-      "a Software Developer",
+      "an AI Engineer",
+      "an LLM Developer",
+      "an Agentic AI Developer",
       "a Full Stack Developer",
-      "an Explorer",
-      "a Cyber Crime Intervention Officer"
+      "a Researcher"
     ],
     "experienceSummary": "1+ years"
   },
@@ -47,7 +52,8 @@
         "Models: Implemented Random Forest, LSTM, and a Hybrid LSTM + Sentiment model.",
         "Data Sources: Used historical stock data and real-time text from Google News, Reddit, and Twitter.",
         "Sentiment Analysis: Employed VADER and BERT for sentiment scoring.",
-        "Performance: Hybrid LSTM + Sentiment model showed superior accuracy with lowest RMSE and MAE, demonstrating the value of sentiment integration."
+        "Findings: The Hybrid LSTM + BERT sentiment model outperformed Random Forest, with the hybrid model reporting the lowest RMSE and MAE.",
+        "Published in JETIR, Volume 12, Issue 7, pages C716-C721, July 2025 (ISSN 2349-5162)."
       ],
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
@@ -63,34 +69,110 @@
       "github_link": "https://www.jetir.org/view?paper=JETIR2507277"
     },
     {
+      "AvatarIcon": "https://img.icons8.com/color/48/python--v1.png",
+      "Title": "Gyanova v4: Autonomous Multi-Agent System",
+      "SubHeader": "An agent system that uses tools to solve multi-step queries",
+      "Description": [
+        "Built a LangChain multi-agent system that chains tools such as web search, a calculator, and email to work through complex queries.",
+        "Designed a custom action dispatcher that routes model intent to typed Python functions.",
+        "Added memory, error recovery, and tool-use tracing to the agent loop."
+      ],
+      "TechIcon": [
+        { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
+        { "component": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png", "name": "LangChain" },
+        { "component": "https://img.icons8.com/color/48/react-native.png", "name": "React" }
+      ],
+      "github_link": "https://github.com/swarpya/gyanova_v4"
+    },
+    {
+      "AvatarIcon": "https://img.icons8.com/color/48/python--v1.png",
+      "Title": "Leaf Disease Detection",
+      "SubHeader": "CNN-based leaf disease classification with a Flask API",
+      "Description": [
+        "Built a computer-vision pipeline using convolutional neural networks to identify and classify leaf diseases from image datasets.",
+        "Used OpenCV for image preprocessing and feature extraction.",
+        "Deployed the prediction model through a Flask API for real-time image analysis."
+      ],
+      "TechIcon": [
+        { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
+        { "component": "https://img.icons8.com/fluency/48/pytorch.png", "name": "PyTorch" },
+        { "component": "https://img.icons8.com/color/48/opencv.png", "name": "OpenCV" },
+        { "component": "https://img.icons8.com/ios/50/flask.png", "name": "Flask" }
+      ]
+    },
+    {
+      "AvatarIcon": "https://img.icons8.com/bubbles/50/r--v2.png",
+      "Title": "Wine Quality Clustering",
+      "SubHeader": "Unsupervised clustering of wine samples using R",
+      "Description": [
+        "Applied K-Means and PAM clustering to wine samples using their physicochemical properties.",
+        "Preprocessed features with caret, including normalization and removal of highly correlated or low-variance variables.",
+        "Compared cluster quality with Silhouette analysis and the Hopkins statistic, and visualized centroids."
+      ],
+      "TechIcon": [
+        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "R" },
+        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "caret" },
+        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "ggplot2" },
+        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "factoextra" }
+      ]
+    },
+    {
+      "AvatarIcon": "https://img.icons8.com/fluency/48/hugging-face_app.png",
+      "Title": "EduVid AI",
+      "SubHeader": "Gemini 3 Hackathon project for interactive narrated slideshows",
+      "Description": [
+        "Built an AI-powered platform that turns topics into narrated visual slideshows using text, image, and text-to-speech models.",
+        "Implemented real-time question answering with visual branching.",
+        "Created a PCM-to-WAV audio processing pipeline for browser playback."
+      ],
+      "TechIcon": [
+        { "component": "https://img.icons8.com/color/48/react-native.png", "name": "React" },
+        { "component": "https://img.icons8.com/color/48/typescript.png", "name": "TypeScript" },
+        { "component": "https://img.icons8.com/fluency/48/hugging-face_app.png", "name": "Google Gemini APIs" }
+      ],
+      "Project_link": "https://devpost.com/software/crimsonis"
+    },
+    {
+      "AvatarIcon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png",
+      "Title": "PolyVault",
+      "SubHeader": "Auth0 for AI Agents hackathon project for fraud detection and prevention",
+      "Description": [
+        "Building agent workflows that monitor live financial data to detect suspicious activity.",
+        "Designed automated responses such as flagging transactions and freezing accounts to improve response time."
+      ],
+      "TechIcon": [
+        { "component": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png", "name": "AI Agents" },
+        { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Fraud Detection" }
+      ],
+      "Project_link": "https://devpost.com/software/polyvault"
+    },
+    {
       "AvatarIcon": "/media/icons/Picture2.png",
       "Title": "RedB",
-      "SubHeader": "Intelligent blood Management System for Hospitals and Blood Banks",
+      "SubHeader": "Intelligent blood management for hospitals and blood banks",
       "src": "https://res.cloudinary.com/dmy7eqzxr/video/upload/v1761607704/RedB_drp0vl.m3u8",
-      "Description": "RedB is a new generation technology that connects hospital administration with blood banks. RedB is a platform that connects hospital administration with blood banks. This innovative platform is designed to streamline blood bank operations and improve patient safety by ensuring timely access to blood products when needed",
+      "Description": "RedB is a MEVN-stack blood management platform that connects hospital demand with blood bank inventory. It replaces manual coordination with a digital interface so hospitals can locate and secure blood products more quickly, helping improve patient safety and response times.",
       "TechIcon": [
         { "component": "https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo-atom.svg", "name": "Vue.js" },
         { "component": "https://img.icons8.com/color/48/javascript--v2.png", "name": "Javascript" },
         { "component": "https://img.icons8.com/color/48/nodejs.png", "name": "Node.js" },
         { "component": "https://img.icons8.com/color/48/mongodb.png", "name": "MongoDB" },
-        { "component": "https://img.icons8.com/color/48/express-js.png", "name": "Express.js" },
-        { "component": "https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo-atom.svg", "name": "Vuetify" }
+        { "component": "https://img.icons8.com/color/48/express-js.png", "name": "Express.js" }
       ],
       "Project_link": "https://redb.vercel.app/"
     },
     {
       "AvatarIcon": "https://img.icons8.com/color/48/react-native.png",
-      "Title": "HR Management",
-      "SubHeader": "Associated with HDFC ERGO General Insurance Company Ltd.",
+      "Title": "HR Recruitment Platform",
+      "SubHeader": "HDFC ERGO candidate application portal",
       "src": "https://res.cloudinary.com/dmy7eqzxr/video/upload/v1761607750/HR_management_p0icab.m3u8",
-      "Description": "This web application is designed to streamline Human Resource (HR) processes for organizations. It utilizes the MERN stack for development and offers several functionalities for both admins and users.",
+      "Description": "Contributed to HDFC ERGO's HR recruitment portal, improving the candidate application interface and streamlining the online application experience. Built with React, Material UI, Node.js, Express.js, and PostgreSQL.",
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/react-native.png", "name": "React.js" },
-        { "component": "https://img.icons8.com/color/48/javascript--v2.png", "name": "Javascript" },
         { "component": "https://img.icons8.com/color/48/nodejs.png", "name": "Node.js" },
-        { "component": "https://img.icons8.com/color/48/mongodb.png", "name": "MongoDB" },
         { "component": "https://img.icons8.com/color/48/express-js.png", "name": "Express.js" },
-        { "component": "https://img.icons8.com/color/32/material-ui.png", "name": "Material UI" }
+        { "component": "https://img.icons8.com/color/32/material-ui.png", "name": "Material UI" },
+        { "component": "https://img.icons8.com/color/48/postgreesql.png", "name": "PostgreSQL" }
       ],
       "github_link": "https://github.com/PolyMokashi"
     },
@@ -99,7 +181,7 @@
       "Title": "Part Number System",
       "SubHeader": "Associated with Progneur Technologies Pvt. Ltd.",
       "project_image": "https://iili.io/KscHyOu.md.png",
-      "Description": "A part number system is a method for uniquely identifying and organizing interchangeable parts within a supply chain or inventory management system. It helps track parts, streamline ordering, and ensure efficient assembly. Build a RESTful API with Node.js and Express.js to manage part numbers in a MongoDB database. Create a Vue.js frontend for viewing, adding, editing, and deleting part numbers with functionalities.",
+      "Description": "Developed a full-stack inventory application to organize interchangeable parts and generate and track unique component IDs. Built a RESTful API with Node.js and Express.js backed by MongoDB, designing schemas for complex part hierarchies to reduce manual data-entry errors. Created a responsive Vue.js frontend for real-time part-number CRUD operations.",
       "TechIcon": [
         { "component": "https://cdn.vuetifyjs.com/docs/images/brand-kit/v-logo-atom.svg", "name": "Vue.js" },
         { "component": "https://img.icons8.com/color/48/javascript--v2.png", "name": "Javascript" },
@@ -123,10 +205,14 @@
     },
     {
       "AvatarIcon": "https://img.icons8.com/color/48/python--v1.png",
-      "Title": "Face Democracy- Next Generation Voting",
-      "SubHeader": "Online Voting System Using Facial Recognition",
+      "Title": "Face Democracy: Next Generation Voting",
+      "SubHeader": "Electronic voting system using face recognition",
       "project_image": "https://iili.io/KscHsV4.md.jpg",
-      "Description": "In the digital era, electronic voting machines (EVMs) have emerged to address traditional voting challenges, offering faster tabulation and reduced human error. However, concerns about their security and accuracy persist, especially highlighted during the COVID-19 pandemic, which underscored the need for contactless voting methods. Integrating face-detection technology, a field of artificial intelligence and computer vision, into EVMs presents a promising solution. This technology, proven effective in various sectors for precise identification, can enhance security by verifying voter identities and preventing fraud such as impersonation and multiple voting. This integration aims to revolutionize the electoral process, making it more secure, efficient, and trustworthy.",
+      "Description": [
+        "Developed an electronic voting system that uses facial recognition to authenticate voters and help prevent impersonation and repeat voting.",
+        "Built a face-detection pipeline to compare facial features with registered voter records for automated verification.",
+        "Researched and implemented neural-network layers to improve face-detection accuracy under varying polling conditions."
+      ],
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
         { "component": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png", "name": "Machine Learning" },
@@ -158,7 +244,7 @@
       "id": 4,
       "ava_icon": "/media/icons/aws-logo.svg",
       "link": "https://www.credly.com/badges/fb21fe16-a1a5-4fdd-a22f-ffb300a773df/public_url",
-      "title": "AWS Academy Machine Learning",
+      "title": "AWS Academy Machine Learning Foundations",
       "subheader": "AWS Training and Certification",
       "img": "https://iili.io/KscHZf2.md.jpg"
     },
@@ -211,7 +297,7 @@
       "CompanyName": "Shivaji University, Kolhapur",
       "Role": "Bachelor of Technology in CSE(AI-ML)",
       "CompanyLogo": "https://www.pngkey.com/png/detail/269-2691243_shivaji-university-kolhapur-logo.png",
-      "Description": "Completed my bachelor’s with strong foundations in AI, data science, and software development. I worked on multiple real-world projects involving deep learning, NLP, and computer vision, and secured 2nd place in a coding competition organized by the college coding club.",
+      "Description": "Completed my bachelor’s in Computer Science and Engineering (AI-ML) with an 8.26 CGPA and strong foundations in AI, data science, and software development. I worked on projects involving deep learning, NLP, and computer vision, and secured 2nd place in a coding competition organized by the college coding club.",
       "TechIcon": [],
       "CompanyLink": "https://shivajiuniversity.org/",
       "Place": "Kolhapur, India"
@@ -219,11 +305,11 @@
   ],
   "experience": [
     {
-      "Months": "Jan 2024 - Present",
+      "Months": "Jan 2024 - Jul 2024",
       "CompanyName": "HDFC ERGO General Insurance Company Ltd.",
       "Role": "Web Developer Intern",
       "CompanyLogo": "/media/icons/hdfcergo_logo.svg",
-      "Description": "Build HR recruitment Platform. Collaborated with Digital Banca Team for frontend. Implemented Google Tag Manager to streamline data collection and enhance tracking capabilities in Google. Researched AI tools for social media management, marketing, audio content creation, and chatbots.",
+      "Description": "Implemented role-based access control (RBAC) and JWT authentication to secure user data. Optimized SQL queries for customer-data retrieval and analysis, and built a responsive React dashboard for application management and status updates. Engineered a Google Tag Manager and JavaScript tracking pipeline across three web portals, and automated manual reporting workflows with AI tools, reducing processing time by 20%.",
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/react-native.png", "name": "React.js" },
         { "component": "https://img.icons8.com/color/48/nodejs.png", "name": "Node.js" },
@@ -241,7 +327,7 @@
       "CompanyName": "Progneur Technologies Pvt. Ltd.",
       "Role": "Software Development Engineer Intern",
       "CompanyLogo": "/media/icons/Prog_logo.jpg",
-      "Description": "Build Part Number System. Collaborated for LMS project. Collaborated for Memory Card Game.",
+      "Description": "Developed a Vue.js, Node.js, and MongoDB inventory application to generate and track unique component IDs, including schemas for complex part hierarchies. Co-engineered a web education platform, contributing to backend APIs, role management, secure student and teacher dashboards, and course-progress tracking. Also collaborated on a memory card game.",
       "TechIcon": [
         { "component": "https://img.icons8.com/color/48/vue-js.png", "name": "Vue.js" },
         { "component": "https://img.icons8.com/color/48/nodejs.png", "name": "Node.js" },
@@ -286,7 +372,29 @@
     { "name": "OpenCV", "icon": "https://img.icons8.com/color/48/opencv.png" },
     { "name": "PyTorch", "icon": "https://img.icons8.com/fluency/48/pytorch.png" },
     { "name": "TensorFlow", "icon": "https://img.icons8.com/color/48/tensorflow.png" },
+    { "name": "LangChain", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "LangGraph", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "RAG", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "FastAPI", "icon": "https://img.icons8.com/fluency/48/python--v1.png" },
+    { "name": "Hugging Face Transformers", "icon": "https://img.icons8.com/fluency/48/hugging-face_app.png" },
+    { "name": "Docker", "icon": "https://img.icons8.com/color/48/docker.png" },
+    { "name": "Qdrant", "icon": "https://img.icons8.com/color/48/database.png" },
+    { "name": "AWS", "icon": "/media/icons/aws-logo.svg" },
+    { "name": "Scikit-learn", "icon": "https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" },
+    { "name": "Keras", "icon": "https://img.icons8.com/material-rounded/24/keras.png" },
+    { "name": "NLTK", "icon": "https://miro.medium.com/v2/resize:fit:1100/format:webp/1*-dNH8WI8Oy3etClaRvRCgw.png" },
+    { "name": "NumPy", "icon": "https://img.icons8.com/color/48/numpy.png" },
+    { "name": "Pandas", "icon": "https://img.icons8.com/color/48/pandas.png" },
+    { "name": "BERT", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "VADER", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "Matplotlib", "icon": "https://img.icons8.com/color/48/matplotlib.png" },
+    { "name": "Prompt Engineering", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "RAGAS", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "BERTScore", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "GGUF / llama.cpp", "icon": "https://img.icons8.com/pastel-glyph/64/brain-3--v1.png" },
+    { "name": "Git", "icon": "https://img.icons8.com/color/48/git.png" },
     { "name": "JavaScript", "icon": "https://img.icons8.com/color/48/javascript--v2.png" },
+    { "name": "Java", "icon": "https://img.icons8.com/color/48/java-coffee-cup-logo.png" },
     { "name": "React", "icon": "https://img.icons8.com/color/48/react-native.png" },
     { "name": "Vue.js", "icon": "https://img.icons8.com/color/48/vue-js.png" },
     { "name": "Node.js", "icon": "https://img.icons8.com/color/48/nodejs.png" },
