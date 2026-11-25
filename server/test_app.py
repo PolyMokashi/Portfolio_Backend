@@ -1,12 +1,22 @@
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
-from app import initialize_database, read_portfolio
+from app import initialize_database, main, read_portfolio
 
 
 class PortfolioDatabaseTests(unittest.TestCase):
+    def test_binds_to_all_interfaces_when_platform_port_is_set(self):
+        with patch.dict(os.environ, {"PORT": "10000"}, clear=True):
+            with patch("app.initialize_database"):
+                with patch("app.ThreadingHTTPServer") as server_class:
+                    main()
+
+        self.assertEqual(server_class.call_args.args[0], ("0.0.0.0", 10000))
+
     def test_initializes_all_portfolio_sections(self):
         with tempfile.TemporaryDirectory() as temporary_directory:
             db_path = Path(temporary_directory) / "portfolio.sqlite3"

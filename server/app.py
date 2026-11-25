@@ -117,7 +117,8 @@ def make_handler(db_path=DB_PATH):
 def main():
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
     initialize_database()
-    host = os.environ.get("PORTFOLIO_HOST", "127.0.0.1")
+    default_host = "0.0.0.0" if "PORT" in os.environ else "127.0.0.1"
+    host = os.environ.get("PORTFOLIO_HOST", default_host)
     port = int(os.environ.get("PORTFOLIO_PORT", os.environ.get("PORT", "5000")))
     server = ThreadingHTTPServer((host, port), make_handler())
     logging.info("Portfolio API listening on http://%s:%s", host, port)
