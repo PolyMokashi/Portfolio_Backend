@@ -36,7 +36,7 @@ class PortfolioDatabaseTests(unittest.TestCase):
                     "skills",
                 },
             )
-            self.assertEqual(len(portfolio["projects"]), 11)
+            self.assertEqual(len(portfolio["projects"]), 9)
             self.assertEqual(len(portfolio["certificates"]), 7)
             self.assertEqual(len(portfolio["skills"]), 40)
             self.assertEqual(len(portfolio["footerLinks"]), 5)
@@ -59,11 +59,14 @@ class PortfolioDatabaseTests(unittest.TestCase):
             self.assertTrue(
                 {
                     "Gyanova v4: Autonomous Multi-Agent System",
-                    "Leaf Disease Detection",
-                    "Wine Quality Clustering",
                     "EduVid AI",
                     "PolyVault",
                 }.issubset(project_titles)
+            )
+            self.assertTrue(
+                {"Leaf Disease Detection", "Wine Quality Clustering"}.isdisjoint(
+                    project_titles
+                )
             )
 
     def test_existing_database_content_is_not_overwritten(self):

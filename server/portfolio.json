@@ -85,38 +85,6 @@
       "github_link": "https://github.com/swarpya/gyanova_v4"
     },
     {
-      "AvatarIcon": "https://img.icons8.com/color/48/python--v1.png",
-      "Title": "Leaf Disease Detection",
-      "SubHeader": "CNN-based leaf disease classification with a Flask API",
-      "Description": [
-        "Built a computer-vision pipeline using convolutional neural networks to identify and classify leaf diseases from image datasets.",
-        "Used OpenCV for image preprocessing and feature extraction.",
-        "Deployed the prediction model through a Flask API for real-time image analysis."
-      ],
-      "TechIcon": [
-        { "component": "https://img.icons8.com/color/48/python--v1.png", "name": "Python" },
-        { "component": "https://img.icons8.com/fluency/48/pytorch.png", "name": "PyTorch" },
-        { "component": "https://img.icons8.com/color/48/opencv.png", "name": "OpenCV" },
-        { "component": "https://img.icons8.com/ios/50/flask.png", "name": "Flask" }
-      ]
-    },
-    {
-      "AvatarIcon": "https://img.icons8.com/bubbles/50/r--v2.png",
-      "Title": "Wine Quality Clustering",
-      "SubHeader": "Unsupervised clustering of wine samples using R",
-      "Description": [
-        "Applied K-Means and PAM clustering to wine samples using their physicochemical properties.",
-        "Preprocessed features with caret, including normalization and removal of highly correlated or low-variance variables.",
-        "Compared cluster quality with Silhouette analysis and the Hopkins statistic, and visualized centroids."
-      ],
-      "TechIcon": [
-        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "R" },
-        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "caret" },
-        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "ggplot2" },
-        { "component": "https://img.icons8.com/bubbles/50/r--v2.png", "name": "factoextra" }
-      ]
-    },
-    {
       "AvatarIcon": "https://img.icons8.com/fluency/48/hugging-face_app.png",
       "Title": "EduVid AI",
       "SubHeader": "Gemini 3 Hackathon project for interactive narrated slideshows",
